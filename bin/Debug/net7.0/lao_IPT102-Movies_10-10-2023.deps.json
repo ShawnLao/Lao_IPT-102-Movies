@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "lao_IPT102-Movies_10-10-2023/1.0.0": {
+        "runtime": {
+          "lao_IPT102-Movies_10-10-2023.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lao_IPT102-Movies_10-10-2023/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

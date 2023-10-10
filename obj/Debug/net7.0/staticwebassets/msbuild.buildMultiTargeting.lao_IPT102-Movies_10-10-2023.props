@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\lao_IPT102-Movies_10-10-2023.props" />
+</Project>

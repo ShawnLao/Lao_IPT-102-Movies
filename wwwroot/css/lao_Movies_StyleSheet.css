@@ -1,0 +1,32 @@
+﻿@import url(lao_MovieTables.cshtml);
+
+.MovieImage1 {
+    width: 90px;
+    height: 150px;
+    position: relative;
+    left: 20px;
+    top: 80px;
+    margin-right: 20px;
+}
+
+.MovieDetailMove1
+{
+    position: relative;
+    left: 430px;
+    top: -515px;
+
+    width: 650px;
+    height: 500px;
+}
+
+.MovieDetailMove2
+{
+    position: relative;
+    left: 10px;
+    top: -15px;
+}
+
+#ulbgcolor1
+{
+    background-color: #e2e2e2;
+}

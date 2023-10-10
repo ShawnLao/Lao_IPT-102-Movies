@@ -1,0 +1,64 @@
+﻿@model lao_IPT102_Movies_10_10_2023.Models.lao_MovieModel
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+		@ViewData["Title"] - Lao Movie Theatre
+	</title>
+
+
+	<link rel="stylesheet" type="text/css" href="~/css/lao_Movies_StyleSheet.css"/>
+
+</head>
+
+
+
+<body>
+	
+
+	<div class="MovieDetailDiv1">
+
+
+		<br />
+		<br />
+
+
+		<p>
+
+			<h2>Movie Name: @Model.Movie_Title</h2>
+			<br /> <img src="~/image/@Model.Movie_CoverPicture" alt="@Model.Movie_Title" width="400" height="500" />
+		</p>
+
+		<div class="MovieDetailMove1">
+
+
+			<ul class="list-group active" id="ulbgcolor1">
+
+				<li class="list-group-item active" aria-current="true">Movie Details</li>
+
+				<br />
+				<br />
+
+				<div class="MovieDetailMove2">
+
+					<p>Movie ID: @Model.Movie_ID</p>
+
+					<p>Movie Release Year: @Model.Movie_ReleaseYear</p>
+
+					<p>Movie Rating: @Model.Movie_Rating</p>
+
+					<p>Movie Genre: @Model.Movie_Genre</p>
+
+					<p>Movie Trailer: <a href="@Model.Movie_TrailerLink">@Model.Movie_TrailerLink</a> </p>
+
+				</div>
+
+			</ul>
+
+		</div>
+	</div>
+
+</body>
+<foot></foot>
+</html>

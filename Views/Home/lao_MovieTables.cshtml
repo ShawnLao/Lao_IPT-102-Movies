@@ -1,0 +1,104 @@
+﻿@model List<lao_MovieModel>
+
+@* How to link models in table *@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+		@ViewData["Title"] - Buan_MovieTheater
+	</title>
+
+
+	<link rel="stylesheet" type="text/css" href="~/css/lao_Movies_StyleSheet.css" />
+
+
+
+	
+
+</head>
+
+
+
+<body>
+
+    
+	
+	@* <img src="~/image/disneywishcover.png" height="50" width="50"/> *@
+
+	<h2>Movie List</h2>
+
+	@* Table *@
+
+	<div class="MovieTableDiv1">
+
+		<table id="TEP" class="table table-striped table-hover table-borderless">
+			<thead class="table-dark">
+				<tr>
+			
+				@* <th>MovieCover</th> *@
+				<th>Movies</th>
+				
+			</tr>
+			</thead>
+
+			<tbody>
+				@foreach (var movie in Model)
+				{
+					
+					<tr>
+
+					<td>
+						
+						<img src="~/image/@movie.Movie_CoverPicture" alt="@movie.Movie_Title" class="MovieImage1"/>
+
+						<div class="col" style="position: relative; left: 100px; top: -70px; margin-left: 50px;">
+
+						<strong>ID: </strong> @movie.Movie_ID <br>
+
+								<strong>Movie Title: </strong> <br /> <a href="/Home/lao_Movies/@movie.Movie_ID "> @movie.Movie_Title </a>  (Click Here To See More!)
+						<br>
+						<br>
+						<strong>Release Year: </strong> <br /> @movie.Movie_ReleaseYear
+						<br>
+
+						<strong>Popularity Rating:</strong> @movie.Movie_Rating <br>
+
+						<strong>Genre: </strong> @movie.Movie_Genre <br>
+
+						<strong> Trailer: </strong> <a href="@movie.Movie_TrailerLink"> @movie.Movie_TrailerLink </a>
+
+							</div>
+					</td>
+
+				</tr>
+				}
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+
+	</div>
+
+	@* Table *@
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+
+	<script type="text/javascript">
+
+		var js = jQuery.noConflict(true);
+		js(document).ready(function () {
+			js('#TEP').DataTable({
+			});
+
+		});
+
+	</script>
+	
+
+</body>
+
+
+<foot></foot>
+</html>
